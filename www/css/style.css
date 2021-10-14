@@ -10,10 +10,14 @@ button{
   border-radius: 20px;
 }
 
-button#btnA{
+#btnA{
       background-color: yellow;
       color: green;
       font-weight: bold;
+}
+
+#time{
+  box-shadow: 5px 5px 5px;
 }
 
     #minuteStr {
