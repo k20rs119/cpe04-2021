@@ -193,6 +193,14 @@
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
+      $("#a").html("タイマーをストップしました");
+      $("#a").css("font-size", "11px");
+      $("#a").css("color", "red");
+      $("#a").css("background-color", "white");
+      $("#a").css("padding", "5px");
+      $("#a").css("margin-left", "57%");
+      $("#a").css("border", "2px solid purple");
+      $("#a").css("border-radius", "15px");
       active=false;
         
         
@@ -244,6 +252,7 @@
     <div id="secondStr">〇</div>
     <div id="c"></div>
     <div id="b"></div>
+    <div id="a"></div>
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
