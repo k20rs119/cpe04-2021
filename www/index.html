@@ -171,7 +171,7 @@
         var img=new Image();
         img.src="ksuisbg.gif";
         img.onload=function(){
-          ctx.drawImage(img,0,100,300,300);
+          ctx.drawImage(img,0,0,300,300);
         }
         var audio=new Audio();
         audio.src="pin.wav";
@@ -182,8 +182,7 @@
         active=true;
         startTime=new Date();
         $("#b").html("タイマーを開始しました");
-        $("#b").css("font-family","fantasy");
-        $("#b").css("font-size", "30px");
+        $("#b").css("font-size", "5px");
 
     }
 
@@ -199,7 +198,7 @@
         //alarm();
 
         $("#c").html("タイマーをセットしました");
-        $("#c").css("font-size", "30px");
+        $("#c").css("font-size", "5px");
         active =false;
         period=60 * parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間: 0");
@@ -233,7 +232,6 @@
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
     <div id="c"></div>
-    <div id="a"></div>
     <div id="b"></div>
 
     <div id="remain">Remaining time</div>
