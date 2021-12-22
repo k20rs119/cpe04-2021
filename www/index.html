@@ -15,8 +15,12 @@
 
   </style>
   <script>
-   
-
+   var ncmb = new NCMB(appKey, clientKey);
+    // 利用するデータベースを指定（存在しなければ生成）
+    var TestClass = ncmb.DataStore("cpe04");
+    // コールバックの登録など
+    var testClass = new TestClass();
+    
     // timer処理
     $(function(){
         setInterval(function(){
