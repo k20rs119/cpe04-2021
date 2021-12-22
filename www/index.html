@@ -10,24 +10,12 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="keys.js"></script>
+  
   <style>
 
   </style>
   <script>
-    var ncmb = new NCMB(appKey, clientKey);
-    // 利用するデータベースを指定（存在しなければ生成）
-    var TestClass = ncmb.DataStore("cpe04");
-    // コールバックの登録など
-    var testClass = new TestClass();
-    $(function(){
-      $("#btnC").click(function(e){
-        var key = $("#minute").val();
-        var value = $("#second").val();
-        testClass.set(key,value);
-        testClass.save();
-      })
-    });
+   
 
     // timer処理
     $(function(){
