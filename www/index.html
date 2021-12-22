@@ -20,7 +20,15 @@
     var TestClass = ncmb.DataStore("cpe04");
     // コールバックの登録など
     var testClass = new TestClass();
-    
+     $(function(){
+      $("#btnC").click(function(e){
+        var key = "jikann";
+        //var value1 = $("#minute").val()+":";
+        var value2 = $("#minute").val()+":"+$("#second").val();
+        testClass.set(key,value2);
+        testClass.save();
+      })
+    });
     // timer処理
     $(function(){
         setInterval(function(){
