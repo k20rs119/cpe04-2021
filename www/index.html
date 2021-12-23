@@ -200,6 +200,7 @@
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
         active=true;
+        active2=false;
         startTime=new Date();
         $("#b").html("タイマーを開始しました");
         $("#b").css("font-size", "12px");
@@ -222,7 +223,7 @@
       $("#a").css("border", "2px solid purple");
       $("#a").css("border-radius", "15px");
       active=false;
-        
+      active2=false;  
         
     }
 
@@ -239,6 +240,7 @@
         $("#c").css("border", "2px solid purple");
         $("#c").css("border-radius", "15px");
         active =false;
+        active2=false;
         period=60 * parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間: 0");
         $("#remain").html("残り時間: "+period);
