@@ -23,9 +23,8 @@
      $(function(){
       $("#btnC").click(function(e){
         var key = "jikann";
-        //var value1 = $("#minute").val()+":";
-        var value2 = $("#minute").val()+":"+$("#second").val();
-        testClass.set(key,value2);
+        var value = $("#minute").val()+":"+$("#second").val();
+        testClass.set(key,value);
         testClass.save();
       })
     });
@@ -274,6 +273,7 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
+    <button id="btnD">２倍速</button> 
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
